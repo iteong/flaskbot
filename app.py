@@ -23,7 +23,7 @@ def verify():
 @app.route('/', methods=['POST'])
 def webhook():
 
-    print(request.json())
+    print(request.get_json())
     # endpoint for processing incoming messaging events
 
     data = request.get_json()
