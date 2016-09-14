@@ -66,11 +66,26 @@ def webhook():
 
                     if message_text in special_keywords:
                         special_keywords[message_text](sender_id) # activate the function
-                        send_message(sender_id, "got it, thanks!")
+                        send_message(sender_id, "Yayyy!")
                         return "ok", 200
                     else:
                         send_message(sender_id, "got it, thanks!")
                         #page.send(recipient_id, message_text, callback=send_text_callback, notification_type=NotificationType.REGULAR)
+
+                if messaging_event.get("image"):  # someone sent us a message
+                    send_message(sender_id, "Nice image!")
+
+                if messaging_event.get("gif"):  # someone sent us a message
+                    send_message(sender_id, "Nice gif!")
+
+                if messaging_event.get("button"):  # someone sent us a message
+                    send_message(sender_id, "Nice button!")
+
+                if messaging_event.get("generic"):  # someone sent us a message
+                    send_message(sender_id, "Nice generic!")
+
+                if messaging_event.get("quick reply"):  # someone sent us a message
+                    send_message(sender_id, "Nice quick reply!")
 
 
                 if messaging_event.get("delivery"):  # delivery confirmation
