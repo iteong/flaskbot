@@ -50,17 +50,17 @@ def webhook():
                     special_keywords = {
                         "image": send_image,
                         "gif": send_gif,
-                        "audio": send_audio,
-                        "video": send_video,
-                        "file": send_file,
+                        #"audio": send_audio,
+                        #"video": send_video,
+                        #"file": send_file,
                         "button": send_button,
                         "generic": send_generic,
-                        "receipt": send_receipt,
+                        #"receipt": send_receipt,
                         "quick reply": send_quick_reply,
-                        "read receipt": send_read_receipt,
-                        "typing on": send_typing_on,
-                        "typing off": send_typing_off,
-                        "account linking": send_account_linking
+                        #"read receipt": send_read_receipt,
+                        #"typing on": send_typing_on,
+                        #"typing off": send_typing_off,
+                        #"account linking": send_account_linking
                     }
 
                     if message_text in special_keywords:
