@@ -221,7 +221,7 @@ def send_generic(recipient_id):
                     "template_type":"generic",
                     "elements":[
                       {
-                        "title":"Welcome to Grilled Cheese & Co",
+                        "title":"Grilled Cheese & Co",
                         "item_url":"http://www.ilovegrilledcheese.com",
                         "image_url":"http://www.thelogofactory.com/wp-content/uploads/2015/10/grilled-cheese-co-logo.png",
                         "subtitle":"One of life's simple pleasures!",
@@ -234,7 +234,43 @@ def send_generic(recipient_id):
                           {
                             "type":"postback",
                             "title":"Start Chatting",
-                            "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_START_CHATTING"
+                            "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                          }              
+                        ]
+                      },
+                      {
+                        "title":"Tyto Online",
+                        "item_url":"https://www.tytoonline.com",
+                        "image_url":"https://www.tytoonline.com/assets/Tyto_Online_Sky_Logo-802ce726f540fa74f9eb5a1dcfcccabe63bffb37212af99f9eb4b709c118c716.png",
+                        "subtitle":"Tyto Online is a quest-based, online role-playing game.",
+                        "buttons":[
+                          {
+                            "type":"web_url",
+                            "url":"https://www.tytoonline.com",
+                            "title":"View Website"
+                          },
+                          {
+                            "type":"postback",
+                            "title":"Start Chatting",
+                            "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                          }              
+                        ]
+                      },
+                      {
+                        "title":"Magic Leap",
+                        "item_url":"https://www.magicleap.com/#/home",
+                        "image_url":"https://www.magicleap.com/img/ml-logo.gif",
+                        "subtitle":"Your new way to bring magic back into the world.",
+                        "buttons":[
+                          {
+                            "type":"web_url",
+                            "url":"https://www.magicleap.com/#/home",
+                            "title":"View Website"
+                          },
+                          {
+                            "type":"postback",
+                            "title":"Start Chatting",
+                            "payload":"DEVELOPER_DEFINED_PAYLOAD"
                           }              
                         ]
                       }
@@ -262,18 +298,33 @@ def send_quick_reply(recipient_id):
             "id": recipient_id
         },
         "message":{
-            "text":"Pick a color:",
+            "text":"Who is the hottest guy in the team?:",
             "quick_replies":[
               {
                 "content_type":"text",
-                "title":"Red",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED"
+                "title":"Ivan",
+                "payload":"DEVELOPER_DEFINED_PAYLOAD"
               },
               {
                 "content_type":"text",
-                "title":"Green",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN"
-              }
+                "title":"Thang",
+                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+              },
+              {
+                "content_type":"text",
+                "title":"Boris",
+                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+              },
+              {
+                "content_type":"text",
+                "title":"Igit",
+                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+              },
+              {
+                "content_type":"text",
+                "title":"Ramana",
+                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+              },
             ]
           }
     })
