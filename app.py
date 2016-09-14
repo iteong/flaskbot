@@ -65,6 +65,7 @@ def webhook():
 
                     if message_text in special_keywords:
                         special_keywords[message_text](sender_id) # activate the function
+                        send_message(sender_id, "got it, thanks!")
                     else:
                         send_message(sender_id, "got it, thanks!")
                         #page.send(recipient_id, message_text, callback=send_text_callback, notification_type=NotificationType.REGULAR)
