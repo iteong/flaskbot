@@ -68,7 +68,8 @@ def webhook():
                         send_message(sender_id, "Yayyy!")
                         return "ok", 200
                     else:
-                        send_message(sender_id, "got it, thanks!")
+                        send_message(sender_id, "Thanks for messaging! Type image, gif, button or generic")
+                        send_quick_reply(sender_id)
                         #page.send(recipient_id, message_text, callback=send_text_callback, notification_type=NotificationType.REGULAR)
 
                 if messaging_event.get("delivery"):  # delivery confirmation
