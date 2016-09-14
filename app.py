@@ -44,35 +44,35 @@ def webhook():
                         message_text = messaging_event["message"]["text"]  # the message's text
                         message_text = message_text.lower() # convert to lower case
 
-                    #send_message(sender_id, "got it, thanks!")
+                        #send_message(sender_id, "got it, thanks!")
 
-                    # If we receive a text message, check to see if it matches any special
-                    # keywords and send back the corresponding example. Otherwise, just echo
-                    # the text we received.
-                    special_keywords = {
-                        "image": send_image,
-                        "gif": send_gif,
-                        #"audio": send_audio,
-                        #"video": send_video,
-                        #"file": send_file,
-                        "button": send_button,
-                        "generic": send_generic,
-                        #"receipt": send_receipt,
-                        "quick reply": send_quick_reply,
-                        #"read receipt": send_read_receipt,
-                        #"typing on": send_typing_on,
-                        #"typing off": send_typing_off,
-                        #"account linking": send_account_linking
-                    }
+                        # If we receive a text message, check to see if it matches any special
+                        # keywords and send back the corresponding example. Otherwise, just echo
+                        # the text we received.
+                        special_keywords = {
+                            "image": send_image,
+                            "gif": send_gif,
+                            #"audio": send_audio,
+                            #"video": send_video,
+                            #"file": send_file,
+                            "button": send_button,
+                            "generic": send_generic,
+                            #"receipt": send_receipt,
+                            "quick reply": send_quick_reply,
+                            #"read receipt": send_read_receipt,
+                            #"typing on": send_typing_on,
+                            #"typing off": send_typing_off,
+                            #"account linking": send_account_linking
+                        }
 
-                    if message_text in special_keywords:
-                        special_keywords[message_text](sender_id) # activate the function
-                        send_message(sender_id, "Yayyy!")
-                        return "ok", 200
-                    else:
-                        send_message(sender_id, "Thanks for messaging! Type image, gif, button or generic")
-                        send_quick_reply(sender_id)
-                        #page.send(recipient_id, message_text, callback=send_text_callback, notification_type=NotificationType.REGULAR)
+                        if message_text in special_keywords:
+                            special_keywords[message_text](sender_id) # activate the function
+                            send_message(sender_id, "Yayyy!")
+                            return "ok", 200
+                        else:
+                            send_message(sender_id, "Thanks for messaging! Type image, gif, button or generic")
+                            send_quick_reply(sender_id)
+                            #page.send(recipient_id, message_text, callback=send_text_callback, notification_type=NotificationType.REGULAR)
 
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
