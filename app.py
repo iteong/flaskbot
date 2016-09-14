@@ -106,7 +106,7 @@ def send_message(recipient_id, message_text):
         log(r.text)
 
 def send_image(recipient_id):
-    log("sending image to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
+    log("sending image to {recipient}".format(recipient=recipient_id))
 
     params = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
@@ -134,7 +134,7 @@ def send_image(recipient_id):
 
 
 def send_gif(recipient_id):
-    log("sending gif to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
+    log("sending gif to {recipient}".format(recipient=recipient_id))
 
     params = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
@@ -162,7 +162,7 @@ def send_gif(recipient_id):
 
 
 def send_button(recipient_id):
-    log("sending buttons to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
+    log("sending buttons to {recipient}".format(recipient=recipient_id))
 
     params = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
@@ -202,7 +202,7 @@ def send_button(recipient_id):
         log(r.text)
 
 def send_generic(recipient_id):
-    log("sending generic template to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
+    log("sending generic template to {recipient}".format(recipient=recipient_id))
 
     params = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
@@ -249,7 +249,7 @@ def send_generic(recipient_id):
         log(r.text)
 
 def send_quick_reply(recipient_id):
-    log("sending quick reply to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
+    log("sending quick reply to {recipient}".format(recipient=recipient_id))
 
     params = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
