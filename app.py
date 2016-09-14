@@ -207,7 +207,7 @@ def send_button(recipient_id):
                     {
                     "type":"postback",
                     "title":"Start Chatting",
-                    "payload":"USER_DEFINED_PAYLOAD"
+                    "payload":"image"
                     }
                     ]
                 }
@@ -252,7 +252,7 @@ def send_generic(recipient_id):
                           {
                             "type":"postback",
                             "title":"Start Chatting",
-                            "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                            "payload":"quick reply"
                           }              
                         ]
                       },
@@ -270,7 +270,7 @@ def send_generic(recipient_id):
                           {
                             "type":"postback",
                             "title":"Start Chatting",
-                            "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                            "payload":"quick reply"
                           }              
                         ]
                       },
@@ -288,7 +288,7 @@ def send_generic(recipient_id):
                           {
                             "type":"postback",
                             "title":"Start Chatting",
-                            "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                            "payload":"quick reply"
                           }              
                         ]
                       }
@@ -321,27 +321,27 @@ def send_quick_reply(recipient_id):
               {
                 "content_type":"text",
                 "title":"Ivan",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"gif"
               },
               {
                 "content_type":"text",
                 "title":"Thang",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"gif"
               },
               {
                 "content_type":"text",
                 "title":"Boris",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"gif"
               },
               {
                 "content_type":"text",
                 "title":"Igit",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"gif"
               },
               {
                 "content_type":"text",
                 "title":"Ramana",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                "payload":"gif"
               },
             ]
           }
