@@ -300,7 +300,7 @@ def send_quick_reply(recipient_id):
             "id": recipient_id
         },
         "message":{
-            "text":"Who is the hottest guy in the team?:",
+            "text":"Who is the hottest guy in the team?",
             "quick_replies":[
               {
                 "content_type":"text",
